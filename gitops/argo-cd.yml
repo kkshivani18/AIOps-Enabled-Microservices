@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/kkshivani18/AIOps-Enabled-Microservices.git'
     targetRevision: Main
-    path: gitops/k8s
+    path: gitops
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: boutique
