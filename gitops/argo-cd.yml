@@ -6,14 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/vishakhasadhwani/DevOps-Practice-Guide.git'
-    targetRevision: main
-    path: gitops
+    repoURL: 'https://github.com/kkshivani18/AIOps-Enabled-Microservices.git'
+    targetRevision: Main
+    path: gitops/k8s
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: boutique
-  syncPolicy: {}
-  # syncPolicy:
-  #   automated:
-  #     prune: true
-  #     selfHeal: true
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

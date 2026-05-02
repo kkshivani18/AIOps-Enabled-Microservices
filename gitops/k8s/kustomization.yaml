@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - backend/auth.yml
+  - backend/gateway.yml
+  - backend/order-service.yml
+  - backend/orders.yml
+  - backend/product-service.yml
+  - backend/user-service.yml
+  - frontend/deployment.yml
+  - database/configmap.yml
+  - database/service.yml
+  - database/statefulset.yml
+  - database/restore-job.yml
+  - grafana-dashboard.yml
