@@ -1,6 +1,8 @@
 name: Boutique CI Pipeline
 
 on:
+  push:
+    branches: [ Main ]
   workflow_dispatch:
 
 env:
