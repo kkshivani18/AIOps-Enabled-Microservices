@@ -18,7 +18,7 @@ This project demonstrates a production-grade cloud-native architecture. It moves
 
 ## Architecture
 
-[full architecture](/images/architecture%20and%20workflow/Screenshot%202026-05-01%20094458.png)
+![full architecture](/images/architecture%20and%20workflow/Screenshot%202026-05-01%20094458.png)
 
 ### 1. Microservices Layer
 
@@ -33,12 +33,12 @@ The application follows a decoupled microservices architecture where each servic
 
 ### 2. Infrastructure & Kubernetes Layer
 
-![Infrastructure & Kubernetes Layer](/images/architecture%20and%20workflow/Screenshot%202026-05-01%20202300.png)
+![Infrastructure & Kubernetes Layer](/images/architecture%20and%20workflow/kuber%20and%20docker.png)
 
 The entire stack is hosted on **Amazon EKS (Elastic Kubernetes Service)** across multiple worker nodes to ensure high availability and fault tolerance.
 
 
-![cluster](/images/architecture%20and%20workflow/Screenshot%202026-05-01%20103135.png)
+![cluster](/images/architecture%20and%20workflow/kuber%20and%20docker.png)
 
 *   **Cluster Design**: The application is deployed across a multi-node cluster (Node 1, Node 2, Node 3) connected via a common internal network.
 *   **Containerization**: Every service is containerized using **Docker** and orchestrated by Kubernetes.
@@ -158,5 +158,11 @@ A huge thank you to **Vishakha Sadhwani** for creating such an incredible and hi
 - **Part 2: AIOps & Bedrock Integration** — [Watch on YouTube](https://youtu.be/WyLWj5MjzCE)
 
 Thank you, Vishakha, for your dedication to the community and for providing these resources for free!
+
+---
+
+## 📖 Blog Post
+Check out the detailed article on this project on Medium: 
+[Architecting Intelligent Microservices: Bridging the Gap Between AI and DevOps](https://medium.com/@kkrishnashivani18/architecting-intelligent-microservices-bridging-the-gap-between-ai-and-devops-d981826a6446)
 
 ---
