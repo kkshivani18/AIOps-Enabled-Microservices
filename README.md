@@ -37,9 +37,6 @@ The application follows a decoupled microservices architecture where each servic
 
 The entire stack is hosted on **Amazon EKS (Elastic Kubernetes Service)** across multiple worker nodes to ensure high availability and fault tolerance.
 
-
-![cluster](/images/architecture%20and%20workflow/kuber%20and%20docker.png)
-
 *   **Cluster Design**: The application is deployed across a multi-node cluster (Node 1, Node 2, Node 3) connected via a common internal network.
 *   **Containerization**: Every service is containerized using **Docker** and orchestrated by Kubernetes.
 
