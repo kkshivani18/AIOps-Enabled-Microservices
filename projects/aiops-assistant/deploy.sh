@@ -24,7 +24,7 @@ REGION="us-east-1"
 ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 AGENT_ROLE_NAME="aiops-bedrock-agent-role"
 AGENT_NAME="aiops-assistant"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -W 2>/dev/null || pwd)"
 
 echo ""
 echo "============================================="
